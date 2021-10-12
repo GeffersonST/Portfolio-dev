@@ -56,7 +56,7 @@ html {
 }
 @media (max-width: 75em) {
   html {
-    font-size: 60%;
+    font-size: 55%;
   }
 }
 
@@ -117,6 +117,7 @@ img {
 
 .computer {
   width: auto;
+  align-items: center;
 }
 
 /* nav */
@@ -237,7 +238,7 @@ img {
 .project-image {
   height: calc(100% - 6.8rem);
   width: 100%;
-  object-fit: none;
+  object-fit: contain;
 }
 
 .project-title {
@@ -258,7 +259,7 @@ img {
 }
 
 .btn-show-all:hover {
-  background: var(--main-red);
+  background: #ff7f50;
 }
 
 .btn-show-all:hover > i {
