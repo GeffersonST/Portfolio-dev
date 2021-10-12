@@ -83,7 +83,9 @@ body {
   line-height: 1.4;
   color: var(--main-white);
 }
-
+.work {
+  color: #ff7f50;
+}
 h1,
 h2 {
   font-family: "Raleway", sans-serif;
@@ -112,6 +114,7 @@ img {
   display: block;
   width: 100%;
 }
+
 .computer {
   width: auto;
 }
@@ -152,7 +155,7 @@ img {
 }
 
 .nav-list a:hover {
-  background: var(--main-blue);
+  background: #ff7f50;
 }
 
 /* Welcome section */
@@ -186,7 +189,7 @@ img {
 .projects-section-header {
   max-width: 640px;
   margin: 0 auto 6rem auto;
-  border-bottom: 0.2rem solid var(--main-white);
+  border-bottom: 0.2rem solid #ff7f50;
 }
 
 @media (max-width: 28.75em) {
