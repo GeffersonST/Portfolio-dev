@@ -318,6 +318,11 @@ img {
 .contact-details:hover {
   transform: translateY(8px);
 }
+.badge {
+  max-width: 20%;
+  height: 25px;
+  float: left;
+}
 
 /* Footer */
 
