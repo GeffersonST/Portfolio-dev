@@ -1,100 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+ <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="main.js" />
+    <!-- As tags <link> foram movidas para dentro da tag <head>. -->
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet"/>
 
+    <!-- Title -->
     <title>Gefferson.dev</title>
-  </head>
-  <body></body>
-</html>
-
-<link
-  rel="stylesheet"
-  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-  crossorigin="anonymous"
-/>
-<link
-  href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
-  rel="stylesheet"
-/>
-<link
-  href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
-  rel="stylesheet"
-/>
-<!-- START NAV -->
-
-<nav id="navbar" class="nav">
-  <ul class="nav-list">
-    <h1 class="logo">Gefferson.</h1>
-    <li>
-      <a href="#welcome-section">About</a>
-    </li>
-    <li>
-      <a href="#projects">Work</a>
-    </li>
-    <li>
-      <a href="#contact">Contact</a>
-    </li>
-  </ul>
-</nav>
-
-<!-- END NAV -->
-
-<!-- START WELCOME SECTION -->
-
-<section id="welcome-section" class="welcome-section">
-  <h2>Hi there, I'm</h2>
-  <h1 class="name">Gefferson Severo</h1>
-  <p></p>
-  <div class="container">
-    <p>
-      Front-end Developer <span class="typed-text"> </span
-      ><span class="cursor">&nbsp;</span>
-    </p>
-  </style>
-
-  <h1></h1>
-
-  <script>
-    function typeWriter(elemento) {
-      const textoArray = elemento.innerHTML.split('');
-      elemento.innerHTML = '';
-      textoArray.forEach((letra, i) => {
-        setTimeout(() => elemento.innerHTML += letra, 75 * i);
-      });
-    }
-
-    // Se estiver tendo problemas com performance, utilize o FOR loop como abaixo no local do forEach
-    // function typeWriter(elemento) {
-    //   const textoArray = elemento.innerHTML.split('');
-    //   elemento.innerHTML = '';
-    //   for(let i = 0; i < textoArray.length; i++) {
-    //     setTimeout(() => elemento.innerHTML += textoArray[i], 75 * i);
-    //   }
-    // }
-
-    const titulo = document.querySelector('h1');
-    typeWriter(titulo);
-  </script>
-  </div>
-
-  <div class="computer"></div>
-  <img
-    class="computer"
-    src="assets/image/computer-illustration.png"
-    alt="project"
-  />
-</section>
-
+ </head>
+ <body>
+    <!-- Navigation -->
+    <nav id="navbar" class="nav">
+      <ul class="nav-list">
+        <h1 class="logo">Gefferson.</h1>
+        <li><a href="#welcome-section">About</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+   <!-- Removi os comentários desnecessários.-->
+    <!-- Welcome Section -->
+    <section id="welcome-section" class="welcome-section">
+      <h2>Hi there, I'm</h2>
+      <h1 class="name">Gefferson Severo</h1>
+      <div class="container">
+        <p>Front-end Developer <span class="typed-text"> </span><span class="cursor">&nbsp;</span></p>
+        <script>
+          function typeWriter(elemento) {
+            const textoArray = elemento.innerHTML.split('');
+            elemento.innerHTML = '';
+            textoArray.forEach((letra, i) => {
+              setTimeout(() => elemento.innerHTML += letra, 75 * i);
+            });
+          }
+          const titulo = document.querySelector('h1');
+          typeWriter(titulo);
+        </script>
+      </div>
+      <img class="computer" src="assets/image/computer-illustration.png" alt="project" />
+    </section>
+    <!-- Removi a classe duplicada computer na tag <img>.-->
 <!-- END WELCOME SECTION -->
 
 <!-- START PROJECTS SECTION -->
-
+<!-- Removi a tag <style> aberta sem uma tag correspondente de fechamento. -->
 <section id="projects" class="projects-section">
   <h2 class="projects-section-header">These are some of my projects</h2>
 
